@@ -1,0 +1,192 @@
+/*header
+*/
+.top-panel {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    display: flex;
+    align-items: center; /* Ensures vertical centering */
+    justify-content: space-between; /* Pushes "Home" button to the right */
+    padding: 0 20px; /* Adds horizontal padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    width: 60px;
+    height: 60px;
+    display: flex; /* Ensures proper alignment */
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Removes unwanted white background */
+    overflow: hidden; /* Prevents image from overflowing */
+    border-radius: 10%;
+  }
+  
+  .logo-container img {
+    width: 100%; /* Ensures image fits inside the container */
+    height: auto; /* Keeps aspect ratio */
+    max-width: 60px; /* Prevents overflowing */
+    max-height: 60px;
+  }
+  
+  .company-name {
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  /* Spacer to push Home to the right */
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  /* Home Button */
+  .home-btn {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white; /* Ensures visibility */
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .home-btn:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    color: white;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+h1 {
+    color: white;
+}
+p {
+    color: #f4f4f4;
+    font-size:22px;
+    text-align: center;
+}
+.btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff9a5a, #d16ba5);
+ /* Soft Instagram-like gradient */
+    color: white !important; /* Ensures text is always white */
+    border: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #e96a10, #b52d72);
+    transform: scale(1.05);
+    color: white !important; /* Ensure text remains white on hover */
+  }
+
+    /* carosel indicator */
+    .carousel-indicators button {
+        background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); /* Gradient background */
+        border: 1px solid white; /* Optional: add a white border for visibility */
+        width: 10px; /* Adjust size if needed */
+        height: 20px;
+        opacity: 1; /* Ensure full visibility */
+    }
+
+
+  /* Custom Scrollbar */
+    select::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    select::-webkit-scrollbar-track {
+        background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    select::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #fd7e14, #d63384); 
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    select::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #e96a10, #b52d72); 
+    }
+
+
+  /* footer */
+  .footer {
+    margin-top: 50px;
+    width: 80%; /* Ensure it takes 80% of the screen width */
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto; /* Center the footer */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures children take full width within the footer */
+    gap: 20px;
+  }
+  
+  .footer-item {
+    text-align: center;
+  }
+  
+  .footer-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255  , 0.3);
+    border-radius: 10px;
+}
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+#member{
+    border-radius: 50%;
+}
+/*query
+*/
+

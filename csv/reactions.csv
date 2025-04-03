@@ -1,0 +1,4 @@
+reaction_id,user_id,post_id,type,created_at
+1,2,5,love,2025-03-25 10:20:00
+2,3,7,laugh,2025-03-25 11:45:00
+3,4,6,sad,2025-03-25 12:00:00
