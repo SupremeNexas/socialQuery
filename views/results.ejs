@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= queryTitle %></title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    .back-link { margin-top: 20px; display: block; }
+  </style>
+  <link rel="stylesheet" href="../public/styles/">
+</head>
+<body>
+  <%- include("partials/header.ejs") %>
+  <h1><%= queryTitle %></h1>
+  <% if (rows.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <% Object.keys(rows[0]).forEach(key => { %>
+            <th><%= key %></th>
+          <% }); %>
+        </tr>
+      </thead>
+      <tbody>
+        <% rows.forEach(row => { %>
+          <tr>
+            <% Object.values(row).forEach(val => { %>
+              <td><%= val %></td>
+            <% }); %>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <p>No data found for this query.</p>
+  <% } %>
+  <div class="social-icons" style="display: flex; gap: 15px; justify-content: center; margin-top: 20px;">
+    <a href="/instagram" class="social-btn">Return back</a>
+    </div>
+    <div style="height: 100px;"></div>
+  <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<%- include("partials/header.ejs") %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/content.css" />
+  <title>Login | SocialQuery</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 col-lg-4">
+
+        <div class="card shadow-sm px-4 pt-4 pb-3" style="border-radius: 20px; width: 320px; padding-bottom: 100px; height: 325px; width: 350px;">
+          <h3 class="text-center mb-0" style="color: #007bff; padding-top: 10px;">Login to SocialQuery</h3>
+          <form action="/login" method="POST" class="m-0">
+            <div class="form-group mb-2">
+              <label for="username" class="mb-1">Username</label>
+              <input type="text" class="form-control" id="username" name="username"
+                placeholder="Enter your username" required />
+            </div>
+            <div class="form-group mb-3">
+              <label for="password" class="mb-1">Password</label>
+              <input type="password" class="form-control" id="password" name="password"
+                placeholder="Enter your password" required />
+            </div>
+            <div class="text-center">
+              <button type="submit" class="social-btn" style="width: 120px; font-size: 0.9rem; padding: 6px 5px;">Login</button>
+            </div>
+            <div class="text-center mt-3">
+              <small>Don't have an account? <a href="/register" style="color: #2979ff;">Sign up</a></small>
+            </div>
+          </form>
+        </div>
+
+        
+      </div>
+    </div>
+  </main>
+  <div style="height: 100px;"><%- include('partials/footer') %></div>
+</body>
+
+</html>
